@@ -7,6 +7,7 @@ namespace Lab4.Models
     public class MtgContext : IdentityDbContext
     {
         public virtual DbSet<TcgUser> TcgUsers { get; set; }
+
         public virtual DbSet<Card> Cards { get; set; }
         public MtgContext(DbContextOptions<MtgContext> opt) : base(opt)
         {
